@@ -59,6 +59,9 @@ After gathering and analyzing multiple tests results, I could come to some concl
 - 2. Small gain when changing cache blocking size from 32 to 64. 64 to 128 gives slightly improvements, no effects or worsen performance depending on the algorithm.
 - 3. The best algorithm to use to multiply matrices up to dimensions [2048,2048] is the OpenBLAS implementation using multiple threads. Bigger matrices will perform better on GPU environment, where the clMath program gets the best processing time.
 
+This chart represents the total timing for each algorithm execution. OpenBLAS got the fastest runtime, but in fact it is slower than clMath in processing time. The last 3 GPU implementations got a slower writing time, the reason is still unknown and weird for me because in the other tests there isn't this slowdown on writing phase for GPU. You can check all the benchmark files on 'bench' folder.
+<img src="https://docs.google.com/spreadsheet/oimg?key=0AjKHxPB2qgJXdFdlVm41M2laSFZSeHRRWGV5bEwwSEE&oid=7&zx=q84mxns399q3" />
+
 Implementations description
 =========================
 
