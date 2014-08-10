@@ -1,0 +1,107 @@
+
+===== Matrix-Matrix Multiplication =====
+
+# Matrix Dimensions: 4096 4096 4096
+# Cache Block Size: 128
+# Repeat Count: 2
+# Data Type: double
+# Optimization Level: -O4
+
+========================================
+
+
+============ Read Timings ============
+
+optimizedMult            : 7.472   seconds
+optimizedMult2           : 7.472   seconds
+optimizedMultParallel    : 8.649   seconds
+optimizedMultParallel2   : 8.757   seconds
+strassenMult             : 7.552   seconds
+strassenMult2            : 7.604   seconds
+strassenMultParallel     : 7.544   seconds
+strassenMultParallel2    : 7.608   seconds
+recursiveMult            : 7.584   seconds
+recursiveMult2           : 7.580   seconds
+recursiveMultParallel    : 7.572   seconds
+recursiveMultParallel2   : 7.588   seconds
+openBlas                 : 7.944   seconds
+openBlasParallel         : 7.949   seconds
+standardOpenCL           : 7.496   seconds
+optimizedOpenCL          : 7.512   seconds
+AMDopenCL                : 7.496   seconds
+clMath                   : 7.532   seconds
+
+=======================================
+
+
+============ Write Timings ============
+
+optimizedMult            : 18.041  seconds
+optimizedMult2           : 17.933  seconds
+optimizedMultParallel    : 18.285  seconds
+optimizedMultParallel2   : 18.185  seconds
+strassenMult             : 18.121  seconds
+strassenMult2            : 17.905  seconds
+strassenMultParallel     : 18.025  seconds
+strassenMultParallel2    : 18.041  seconds
+recursiveMult            : 17.993  seconds
+recursiveMult2           : 18.205  seconds
+recursiveMultParallel    : 17.993  seconds
+recursiveMultParallel2   : 18.045  seconds
+openBlas                 : 18.257  seconds
+openBlasParallel         : 18.201  seconds
+standardOpenCL           : 19.490  seconds
+optimizedOpenCL          : 24.920  seconds
+AMDopenCL                : 23.242  seconds
+clMath                   : 23.926  seconds
+
+=======================================
+
+
+============ Process Timings ===========
+
+optimizedMult            : 359.026 seconds
+optimizedMult2           : 42.983  seconds
+optimizedMultParallel    : 90.478  seconds
+optimizedMultParallel2   : 12.828  seconds
+strassenMult             : 50.727  seconds
+strassenMult2            : 20.397  seconds
+strassenMultParallel     : 15.910  seconds
+strassenMultParallel2    : 7.787   seconds
+recursiveMult            : 61.300  seconds
+recursiveMult2           : 27.926  seconds
+recursiveMultParallel    : 20.944  seconds
+recursiveMultParallel2   : 9.077   seconds
+openBlas                 : 11.933  seconds
+openBlasParallel         : 2.991   seconds
+standardOpenCL           : 30.025  (28.906) seconds
+optimizedOpenCL          : 21.544  (21.260) seconds
+AMDopenCL                : 2.480   (2.074) seconds
+clMath                   : 1.578   (1.329) seconds
+
+=======================================
+
+
+============ Final Results ============
+
+optimizedMult            : 384.540 seconds
+optimizedMult2           : 68.388  seconds
+optimizedMultParallel    : 117.411 seconds
+optimizedMultParallel2   : 39.770  seconds
+strassenMult             : 76.401  seconds
+strassenMult2            : 45.907  seconds
+strassenMultParallel     : 41.480  seconds
+strassenMultParallel2    : 33.437  seconds
+recursiveMult            : 86.877  seconds
+recursiveMult2           : 53.711  seconds
+recursiveMultParallel    : 46.509  seconds
+recursiveMultParallel2   : 34.711  seconds
+openBlas                 : 38.134  seconds
+openBlasParallel         : 29.140  seconds
+standardOpenCL           : 57.012  seconds
+optimizedOpenCL          : 53.977  seconds
+AMDopenCL                : 33.219  seconds
+clMath                   : 33.037  seconds
+
+=======================================
+

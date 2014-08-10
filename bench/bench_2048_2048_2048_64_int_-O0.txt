@@ -1,0 +1,63 @@
+
+===== Matrix-Matrix Multiplication =====
+
+# Matrix Dimensions: 2048 2048 2048
+# Cache Block Size: 64
+# Repeat Count: 3
+# Data Type: int
+# Optimization Level: -O0
+
+========================================
+
+
+============ Read Timings ============
+
+standardMult             : 0.408   seconds
+optimizedMult            : 0.404   seconds
+optimizedMultParallel    : 0.408   seconds
+strassenMult             : 0.428   seconds
+strassenMultParallel     : 0.428   seconds
+recursiveMult            : 0.476   seconds
+recursiveMultParallel    : 0.480   seconds
+
+=======================================
+
+
+============ Write Timings ============
+
+standardMult             : 0.444   seconds
+optimizedMult            : 0.452   seconds
+optimizedMultParallel    : 0.452   seconds
+strassenMult             : 0.444   seconds
+strassenMultParallel     : 0.440   seconds
+recursiveMult            : 0.484   seconds
+recursiveMultParallel    : 0.468   seconds
+
+=======================================
+
+
+============ Process Timings ===========
+
+standardMult             : 85.281  seconds
+optimizedMult            : 24.590  seconds
+optimizedMultParallel    : 7.174   seconds
+strassenMult             : 36.406  seconds
+strassenMultParallel     : 10.646  seconds
+recursiveMult            : 48.191  seconds
+recursiveMultParallel    : 16.898  seconds
+
+=======================================
+
+
+============ Final Results ============
+
+standardMult             : 86.133  seconds
+optimizedMult            : 25.446  seconds
+optimizedMultParallel    : 8.034   seconds
+strassenMult             : 37.278  seconds
+strassenMultParallel     : 11.514  seconds
+recursiveMult            : 49.151  seconds
+recursiveMultParallel    : 17.846  seconds
+
+=======================================
+

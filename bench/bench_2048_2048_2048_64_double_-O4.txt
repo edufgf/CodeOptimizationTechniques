@@ -1,0 +1,87 @@
+
+===== Matrix-Matrix Multiplication =====
+
+# Matrix Dimensions: 2048 2048 2048
+# Cache Block Size: 64
+# Repeat Count: 3
+# Data Type: double
+# Optimization Level: -O4
+
+========================================
+
+
+============ Read Timings ============
+
+standardMult             : 1.868   seconds
+optimizedMult            : 1.872   seconds
+optimizedMult2           : 1.868   seconds
+optimizedMultParallel    : 2.156   seconds
+optimizedMultParallel2   : 2.168   seconds
+strassenMult             : 1.888   seconds
+strassenMult2            : 1.892   seconds
+strassenMultParallel     : 1.892   seconds
+strassenMultParallel2    : 1.896   seconds
+recursiveMult            : 1.900   seconds
+recursiveMult2           : 1.896   seconds
+recursiveMultParallel    : 1.904   seconds
+recursiveMultParallel2   : 1.908   seconds
+
+=======================================
+
+
+============ Write Timings ============
+
+standardMult             : 4.304   seconds
+optimizedMult            : 4.264   seconds
+optimizedMult2           : 4.308   seconds
+optimizedMultParallel    : 4.360   seconds
+optimizedMultParallel2   : 4.344   seconds
+strassenMult             : 4.324   seconds
+strassenMult2            : 4.316   seconds
+strassenMultParallel     : 4.340   seconds
+strassenMultParallel2    : 4.340   seconds
+recursiveMult            : 4.308   seconds
+recursiveMult2           : 4.324   seconds
+recursiveMultParallel    : 4.280   seconds
+recursiveMultParallel2   : 4.284   seconds
+
+=======================================
+
+
+============ Process Timings ===========
+
+standardMult             : 67.664  seconds
+optimizedMult            : 6.448   seconds
+optimizedMult2           : 3.180   seconds
+optimizedMultParallel    : 1.606   seconds
+optimizedMultParallel2   : 0.843   seconds
+strassenMult             : 6.608   seconds
+strassenMult2            : 3.172   seconds
+strassenMultParallel     : 2.033   seconds
+strassenMultParallel2    : 1.165   seconds
+recursiveMult            : 8.213   seconds
+recursiveMult2           : 3.904   seconds
+recursiveMultParallel    : 2.877   seconds
+recursiveMultParallel2   : 1.289   seconds
+
+=======================================
+
+
+============ Final Results ============
+
+standardMult             : 73.837  seconds
+optimizedMult            : 12.585  seconds
+optimizedMult2           : 9.357   seconds
+optimizedMultParallel    : 8.122   seconds
+optimizedMultParallel2   : 7.356   seconds
+strassenMult             : 12.821  seconds
+strassenMult2            : 9.381   seconds
+strassenMultParallel     : 8.266   seconds
+strassenMultParallel2    : 7.401   seconds
+recursiveMult            : 14.421  seconds
+recursiveMult2           : 10.125  seconds
+recursiveMultParallel    : 9.061   seconds
+recursiveMultParallel2   : 7.481   seconds
+
+=======================================
+
