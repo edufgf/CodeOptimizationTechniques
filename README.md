@@ -64,30 +64,64 @@ Implementations description
 
 19 programs.
 
-standardMult:
+<b>standardMult</b>:
 Basic 3 nested loops.
 
-optimizedMult:
-Cache blocking (parameter) and loop unrolling x5
+<b>optimizedMult</b>:
+Cache blocking (parameter) and loop unrolling x5.
 
-optimizedMult2:
-Cache blocking (parameter) and SIMD instruction (x8 float, x4 double)
+<b>optimizedMult2</b>:
+Cache blocking (parameter) and SIMD instruction (x8 float, x4 double).
 
-"optimizedMultParallel", 
-"optimizedMultParallel2", 
-"strassenMult", 
-"strassenMult2", 
-"strassenMultParallel", 
-"strassenMultParallel2", 
-"recursiveMult", 
-"recursiveMult2", 
-"recursiveMultParallel", 
-"recursiveMultParallel2", 
-"openBlas", 
-"openBlasParallel", 
-"standardOpenCL", 
-"optimizedOpenCL", 
-"AMDopenCL", 
-"clMath"
+<b>optimizedMultParallel</b>:
+Cache blocking (parameter), loop unrolling x5 and OpenMP parallel for on outermost loop.
+
+<b>optimizedMultParallel2</b>:
+Cache blocking (parameter),SIMD instruction (x8 float, x4 double) and OpenMP parallel for on outermost loop.
+
+<b>strassenMult</b>:
+Cache blocking (parameter) and loop unrolling x5. Only works on square matrices with dimension as a power of two. Memory saving implementation by using final matrix as temporary matrix.
+
+<b>strassenMult2</b>:
+Cache blocking (parameter) and SIMD instruction (x8 float, x4 double). Only works on square matrices with dimension as a power of two. Memory saving implementation by using final matrix as temporary matrix.
+
+<b>strassenMultParallel</b>: 
+Cache blocking (parameter), loop unrolling x5 and Pthreads parallel execution on each matrix quadrant. Only works on square matrices with dimension as a power of two. Memory saving implementation by using final matrix as temporary matrix.
+
+<b>strassenMultParallel2</b>: 
+Cache blocking (parameter), SIMD instruction (x8 float, x4 double) and Pthreads parallel execution on each matrix quadrant. Only works on square matrices with dimension as a power of two. Memory saving implementation by using final matrix as temporary matrix.
+
+<b>recursiveMult</b>: 
+Cache blocking (parameter) and loop unrolling x5. Z-order memory layout for better cache usage.
+
+<b>recursiveMult2</b>: 
+Cache blocking (parameter) and SIMD instruction (x8 float, x4 double). Z-order memory layout for better cache usage.
+
+<b>recursiveMultParallel</b>: 
+Cache blocking (parameter), loop unrolling x5 and Pthreads parallel execution for generating tasks and executing them. Task Scheduler and Z-order memory layout for better cache usage.
+
+<b>recursiveMultParallel2</b>: 
+Cache blocking (parameter), SIMD instruction (x8 float, x4 double) and Pthreads parallel execution for generating tasks and executing them. Task Scheduler and Z-order memory layout for better cache usage.
+
+<b>openBlas</b>: 
+OpenBLAS implementation using one thread.
+More Info: http://www.openblas.net/
+
+<b>openBlasParallel</b>: 
+OpenBLAS implementation using multiple threads.
+More Info: http://www.openblas.net/
+
+<b>standardOpenCL</b>: 
+Standard OpenCL implementation. Each thread will compute the result for one single matrix cell.
+
+<b>optimizedOpenCL</b>: 
+OpenCL implementation, blocking and use of group local memory.
+
+<b>AMDopenCL</b>:
+Implementation that came with the AMD APP SDK v2.8.1
+
+<b>clMath</b>
+AMD Accelerated Parallel Processing Math Library
+More info: http://developer.amd.com/tools-and-sdks/opencl-zone/amd-accelerated-parallel-processing-math-libraries/
 
 
