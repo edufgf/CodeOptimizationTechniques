@@ -119,6 +119,7 @@ OpenCL implementation, blocking and use of group local memory.
 
 <b>AMDopenCL</b>:<br>
 Implementation that came with the AMD APP SDK v2.8.1
+<br>More info: http://developer.amd.com/tools-and-sdks/opencl-zone/amd-accelerated-parallel-processing-app-sdk/
 
 <b>clMath</b>:<br>
 AMD Accelerated Parallel Processing Math Library.
