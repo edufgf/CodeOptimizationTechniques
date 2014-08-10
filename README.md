@@ -74,10 +74,10 @@ Cache blocking (parameter) and loop unrolling x5.
 Cache blocking (parameter) and SIMD instruction (x8 float, x4 double).
 
 <b>optimizedMultParallel</b>:<br>
-Cache blocking (parameter), loop unrolling x5 and OpenMP parallel for on outermost loop.
+Cache blocking (parameter), loop unrolling x5 and OpenMP 'parallel for' on outermost loop.
 
 <b>optimizedMultParallel2</b>:<br>
-Cache blocking (parameter),SIMD instruction (x8 float, x4 double) and OpenMP parallel for on outermost loop.
+Cache blocking (parameter),SIMD instruction (x8 float, x4 double) and OpenMP 'parallel for' on outermost loop.
 
 <b>strassenMult</b>:<br>
 Cache blocking (parameter) and loop unrolling x5. Only works on square matrices with dimension as a power of two. Memory saving implementation by using final matrix as temporary matrix.
@@ -104,11 +104,11 @@ Cache blocking (parameter), loop unrolling x5 and Pthreads parallel execution fo
 Cache blocking (parameter), SIMD instruction (x8 float, x4 double) and Pthreads parallel execution for generating tasks and executing them. Task Scheduler and Z-order memory layout for better cache usage.
 
 <b>openBlas</b>:<br> 
-OpenBLAS implementation using one thread.
+OpenBLAS implementation using one thread.<br>
 More Info: http://www.openblas.net/
 
 <b>openBlasParallel</b>:<br> 
-OpenBLAS implementation using multiple threads.
+OpenBLAS implementation using multiple threads.<br>
 More Info: http://www.openblas.net/
 
 <b>standardOpenCL</b>:<br> 
@@ -121,7 +121,7 @@ OpenCL implementation, blocking and use of group local memory.
 Implementation that came with the AMD APP SDK v2.8.1
 
 <b>clMath</b>:<br>
-AMD Accelerated Parallel Processing Math Library
-More info: http://developer.amd.com/tools-and-sdks/opencl-zone/amd-accelerated-parallel-processing-math-libraries/
+AMD Accelerated Parallel Processing Math Library.
+<br>More info: http://developer.amd.com/tools-and-sdks/opencl-zone/amd-accelerated-parallel-processing-math-libraries/
 
 
