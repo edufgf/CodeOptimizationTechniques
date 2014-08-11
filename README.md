@@ -3,7 +3,7 @@ Code Optimization Techniques
 
 Implementation and benchmark of optimization techniques and algorithms applied to the Matrix Multiplication problem on a CPU/GPU multithreaded environment.
 
-This was an undergraduate research project done at Federal University of Rio de Janeiro (UFRJ) July/2013 - July/2014.
+This was an undergraduate research project done at Federal University of Rio de Janeiro (UFRJ) August/2013 - July/2014.
 
 Optimization Techniques
 ==========================
